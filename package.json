@@ -1,0 +1,12 @@
+{
+  "name": "teste_pratico_smarkio",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:ailsonjr/Teste_Pratico_SMARKIO.git",
+  "author": "Ailson Lima Jr. <ailsonjr21@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "ts-node": "^10.0.0",
+    "typescript": "^4.3.2"
+  }
+}
