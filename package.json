@@ -5,8 +5,7 @@
   "repository": "git@github.com:ailsonjr/Teste_Pratico_SMARKIO.git",
   "author": "Ailson Lima Jr. <ailsonjr21@gmail.com>",
   "license": "MIT",
-  "devDependencies": {
-    "ts-node": "^10.0.0",
-    "typescript": "^4.3.2"
+  "dependencies": {
+    "express": "^4.17.1"
   }
 }
