@@ -1,5 +1,5 @@
 const app = require('../app');
-const debug = require('debug')('vendas:server');
+const debug = require('debug')('convTxt2Aud:server');
 const http = require('http');
 
 const port = normalizePort(process.env.PORT || '3000');
