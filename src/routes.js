@@ -1,9 +1,8 @@
 const express = require('express');
+const CommentController = require('./controllers/CommentController');
 
 const routes = express.Router();
 
-routes.get('/', (req, res) => {
-  return res.json({ message: 'Hello World' });
-});
+routes.post('/comments', CommentController.store);
 
 module.exports = routes;
