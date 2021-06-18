@@ -1,8 +1,8 @@
 module.exports = {
   dialect: 'mysql',
   username: 'root',
-  password: '#Tsunami21',
-  database: 'sqlnode',
+  password: '1234',
+  database: 'smarkio',
   host: 'localhost',
   define: {
     timestamps: true,

@@ -2,23 +2,25 @@
   <section class="py-5">
     <div class="container px-4 px-lg-5 my-5">
       <div class="row gx-4 gx-lg-5 align-items-center">
-        <div class="col-md-6">
-          <label for="textarea-comment">Digite aqui um comentário:</label>
-          <textarea id="textarea-comment" name="textarea-comment" rows="8" cols="40"
-            class="comment mb-5 mb-md-0"></textarea>
-          <button class="btn btn-outline-dark flex-shrink-0" type="button">
-            Comentar
-          </button>
+        <div class="col-md-6 form-group">
+          <form action="/comments" method="POST">
+            <label for="textarea-comment">Digite aqui um comentário:</label>
+            <textarea id="textarea-comment" name="comment" rows="8" cols="40"
+              class="comment mb-5 mb-md-0 form-group"></textarea>
+            <button type="submit" class="btn btn-outline-dark flex-shrink-0">
+              Comentar
+            </button>
+          </form>
         </div>
         <div class="col-md-6">
-          <h2 class="display-5 fw-bolder">Comentários:</h2>
+          <h3>Comentários:</h3>
           <p class="lead">API criada para converter textos em audio, ao clicar no botão Ouvir, o mesmo faz uma request
             para a API da IBM </p>
-          <audio src="" />
           <div class="d-flex">
             <button id="play" class="btn btn-outline-dark flex-shrink-0" type="button">
               Ouvir
             </button>
+            <audio src="" />
           </div>
         </div>
       </div>

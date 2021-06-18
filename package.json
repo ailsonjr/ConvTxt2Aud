@@ -6,8 +6,8 @@
   "author": "Ailson Lima Jr. <ailsonjr21@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "dev": "nodemon src/server.js",
-    "start": "node ./bin/www"
+    "start": "node ./bin/www",
+    "dev": "nodemon nodemon"
   },
   "dependencies": {
     "cookie-parser": "~1.4.4",
