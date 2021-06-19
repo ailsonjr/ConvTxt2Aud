@@ -13,10 +13,6 @@ module.exports = {
         type: Sequelize.TEXT,
         allowNull: false,
       },
-      comment_text: {
-        type: Sequelize.TEXT,
-        allowNull: false,
-      },
       createdAt: {
         type: Sequelize.DATE,
         field: 'created_at'

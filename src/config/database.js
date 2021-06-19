@@ -1,9 +1,11 @@
+require('dotenv').config();
+
 module.exports = {
   dialect: 'mysql',
-  username: 'root',
-  password: '1234',
-  database: 'smarkio',
-  host: 'localhost',
+  username: process.env.BD_USERNAME,
+  password: process.env.BD_PASSWORD,
+  database: process.env.BD_DATABASE,
+  host: process.env.BD_HOST,
   define: {
     timestamps: true,
     underscored: true,

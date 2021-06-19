@@ -1,17 +1,18 @@
 {
-  "name": "teste_pratico_smarkio",
+  "name": "conversor_texto_audio_smarkio",
   "version": "1.0.0",
   "main": "app.js",
-  "repository": "git@github.com:ailsonjr/Teste_Pratico_SMARKIO.git",
+  "repository": "git@github.com:ailsonjr/ConvTxt2Aud.git",
   "author": "Ailson Lima Jr. <ailsonjr21@gmail.com>",
   "license": "MIT",
   "scripts": {
     "start": "node ./bin/www",
-    "dev": "nodemon src/server.js"
+    "dev": "nodemon app.js"
   },
   "dependencies": {
     "cookie-parser": "~1.4.4",
     "debug": "~2.6.9",
+    "dotenv": "^10.0.0",
     "ejs": "~2.6.1",
     "express": "^4.17.1",
     "http-errors": "~'1.6.3",
