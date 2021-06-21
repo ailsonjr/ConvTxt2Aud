@@ -1,7 +1,7 @@
 # Conversor de texto para áudio
 ## _Teste prático de programação_
 
-![N|Solid](https://smark.io/wp-content/uploads/2021/01/smarkio-logo-dark.png)](https://smark.io/)
+![N|Solid](https://smark.io/wp-content/uploads/2021/01/smarkio-logo-dark.png)
 
 ### Descrição do Objetivo
 
@@ -61,7 +61,7 @@ npm start
 
  - Abra o seu browser e digite na barra de endereço o host e a porta inseridas no arquivo '.env' e a página carregada será como essa:
 
-![]('./public/assets/example.png')
+![](/public/assets/example.png)
 
 ### Pronto! A aplicação está pronta para ser usada!
 
