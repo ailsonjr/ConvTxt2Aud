@@ -2,8 +2,6 @@ const express = require('express');
 const path = require('path');
 const cookieParser = require('cookie-parser');
 const logger = require('morgan');
-const swaggerUi = require('swagger-ui-express');
-const swaggerDocument = require('./swagger.json');
 
 const app = express();
 

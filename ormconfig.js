@@ -1,11 +1,11 @@
 module.exports = {
   "type": "mysql",
-  "host": process.env.BD_HOST,
-  "port": 3306,
-  "username": process.env.BD_USERNAME,
-  "password": process.env.BD_PASS,
-  "database": process.env.BD,
-  "migrations": ["./src/migrations/**.ts"],
+  "host": "localhost",
+  "port": "3306",
+  "username": "root",
+  "password": "1234",
+  "database": "smarkio",
+  "migrations": ["./src/migrations/**.js"],
   "cli": {
     "migrationsDir": "./src/migrations"
   }

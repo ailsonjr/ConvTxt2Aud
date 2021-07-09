@@ -1,4 +1,4 @@
-const Comment = require("../models/Comment");
+const Comment = require("../models/index");
 
 class Comment_Controller {
 
@@ -16,10 +16,10 @@ class Comment_Controller {
   }
 
   async store(req, res) {
-    const { comment_text } = req.body;
+    const { comment } = req.body;
 
     try {
-      const comment = await Comment.create({ comment_text });
+      const comment = await Comment.create({ comment });
       return res.json(comment);
     } catch (e) {
       console.log(e.message);

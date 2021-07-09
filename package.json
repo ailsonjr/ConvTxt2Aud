@@ -6,7 +6,7 @@
   "author": "Ailson Lima Jr. <ailsonjr21@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "start": "node ./bin/www",
+    "start": "nodemon ./bin/www app.js",
     "dev": "nodemon app.js"
   },
   "dependencies": {
