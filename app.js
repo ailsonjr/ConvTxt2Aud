@@ -5,7 +5,7 @@ const logger = require('morgan');
 
 const app = express();
 
-require('./src/database');
+require('./src/config/database');
 
 const Comment = require('./src/controller');
 
@@ -19,7 +19,6 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.get('/', Comment.index);
-app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
 app.get('/db', Comment.db);
 app.post('/comments', Comment.store);
 

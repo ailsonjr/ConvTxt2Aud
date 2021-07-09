@@ -1,12 +1,14 @@
-const DataTypes = require('sequelize/lib/data-types');
-const createComment = (sequelize) => {
-
-  sequelize.define('comment', {
-    id: DataTypes.INTEGER,
-    comment: DataTypes.TEXT,
-    createdAt: DataTypes.DATE,
-    updatedAt: DataTypes.DATE
+'use strict';
+const {
+  Model
+} = require('sequelize');
+module.exports = (sequelize, DataTypes) => {
+  class createComment extends Model { };
+  createComment.init({
+    comment: DataTypes.TEXT
+  }, {
+    sequelize,
+    modelName: 'createComment',
   });
+  return createComment;
 };
-
-module.exports = createComment;

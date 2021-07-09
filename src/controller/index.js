@@ -1,4 +1,4 @@
-const Comment = require("../models/index");
+const createComment = require("../models/createcomment");
 
 class Comment_Controller {
 
@@ -7,7 +7,7 @@ class Comment_Controller {
   }
 
   db(req, res) {
-    Comment.findAll().then(comment => {
+    createComment.findAll().then(comment => {
       res.status(200).json(comment);
     }).catch(e => {
       console.log(e.message);
@@ -19,8 +19,8 @@ class Comment_Controller {
     const { comment } = req.body;
 
     try {
-      const comment = await Comment.create({ comment });
-      return res.json(comment);
+      const newComment = await createComment.create({ comment });
+      return res.json(newComment);
     } catch (e) {
       console.log(e.message);
       res.status(500).json({ message: 'Algo não está certo...' })
