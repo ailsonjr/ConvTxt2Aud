@@ -31,6 +31,8 @@ npm install
 npx sequelize db:create
 npx sequelize db:migrate
  ```
+ - Visite o site[Text to Speech do IBM Watson](https://www.ibm.com/cloud/watson-text-to-speech), crie uma conta gratuita e use a *apikey* e a *serviceUrl* no arquivo src/service/watson.js
+
  Assim a aplicação está toda configurada
 ## Inicialização:
 
@@ -46,6 +48,3 @@ npm start
 ### Pronto! A aplicação está pronta para ser usada!
 
 A aplicação também se encontra hospedada na plataforma do  [HerokuApp](https://conv-txt-aud.herokuapp.com/)
-
-### OBS:
-A aplicação está configurada com meu APIkey da IBM
