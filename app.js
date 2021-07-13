@@ -8,7 +8,8 @@ require('./src/config/config.json');
 
 app.get("/", (req, res) => {
   res.sendFile(path.join(__dirname + '/public/html/index.html'));
-})
+});
+app.use(express.json());
 
 app.use('/comments', controllers.comments);
 

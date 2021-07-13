@@ -2,8 +2,8 @@ module.exports = {
   "type": "mysql",
   "host": "localhost",
   "port": "3306",
-  "username": "root",
-  "password": "1234",
+  "username": "ailson",
+  "password": "bia",
   "database": "smarkio",
   "migrations": ["./src/migrations/**.js"],
   "cli": {

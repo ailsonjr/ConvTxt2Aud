@@ -47,7 +47,7 @@
             <textarea id="textarea-comment" name="comment" rows="8" cols="40"
               class="comment mb-5 mb-md-0 form-group"></textarea>
           </form>
-          <form class='form' action="/comments" method="POST">
+          <form class='form'>
             <button type="submit" class="btn btn-outline-dark flex-shrink-0">
               Comentar
             </button>
@@ -75,7 +75,6 @@
 
     axios.get(url, {})
       .then(res => {
-        console.log(res.data);
         return res.data;
       })
       .then(data => data.forEach(comment => {
