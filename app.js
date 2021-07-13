@@ -11,11 +11,6 @@ app.get("/", (req, res) => {
 })
 
 app.use('/comments', controllers.comments);
-// app.get('/', home);
-
-// app.get('/', Comment.index);
-// app.get('/db', Comment.db);
-// app.post('/comments', Comment.store);
 
 app.listen(port, console.log(`App listening on port:${port}`));
 

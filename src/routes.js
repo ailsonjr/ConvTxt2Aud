@@ -1,7 +1,7 @@
 const { Router } = require('express');
-const router = Router();
+const routes = Router();
 
-router.get('/', (req, res) => {
+routes.get('/', (req, res) => {
   res.render('home', {
     message: 'Hello World from home.js'
   })
