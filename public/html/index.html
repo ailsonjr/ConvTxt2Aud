@@ -42,16 +42,16 @@
           <h3>Conversor de texto para áudio Smarkio</h3>
           <p>Digite um comentário, clique no botão comentar e seu comentário automaticamente será inserido na lista ao
             lado com a opção de ouvir o que foi digitado usando a API <strong>Text to Speech do IBM Watson</strong></p>
-          <form class='form' action="/comments" method="POST">
-            <label for="textarea-comment">Digite aqui um comentário:</label>
-            <textarea id="textarea-comment" name="comment" rows="8" cols="40"
-              class="comment mb-5 mb-md-0 form-group"></textarea>
-          </form>
-          <form class='form'>
-            <button type="submit" class="btn btn-outline-dark flex-shrink-0">
-              Comentar
-            </button>
-          </form>
+          <div class="form-group">
+            <form action="/comments" method="POST">
+              <label for="textarea-comment">Digite aqui um comentário:</label>
+              <textarea id="textarea-comment" name="comment" value="comment" rows="8" cols="40"
+                class="comment mb-5 mb-md-0 form-control"></textarea>
+              <div>
+                <input id="btn-submit" type="submit" value="Comentar" class="btn btn-outline-dark flex-shrink-0" />
+              </div>
+            </form>
+          </div>
         </div>
         <div class="col-md-6">
           <h3>Comentários:</h3>
@@ -61,6 +61,9 @@
       </div>
     </div>
     </div>
+    <audio id="audio">
+      <source id="source" src="" type="audio/wav">
+    </audio>
   </section>
   <footer class="py-4 bg-dark fixed-bottom">
     <div class="container">
@@ -71,6 +74,7 @@
   <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
   <script>
     const comments = document.querySelector('.comments');
+    const textarea = document.querySelector('#textarea-comment');
     const url = 'http://localhost:3000/comments';
 
     axios.get(url, {})
@@ -89,15 +93,6 @@
         comments.appendChild(button);
       }));
 
-    {/* <p class="lead">API criada para converter textos em audio, ao clicar no botão Ouvir, o mesmo faz uma request
-              para a API da IBM </p>
-            <p>{<%- %>}</p>
-            <div class="d-flex">
-              <button id="play" class="btn btn-outline-dark flex-shrink-0" type="button">
-                Ouvir
-              </button>
-              <audio src="" />
-            </div> */}
 
     // const play = document.querySelector('#play')
     // play.addEventListener('click', function () {
