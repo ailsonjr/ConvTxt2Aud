@@ -6,16 +6,12 @@ const port = 3000
 
 require('./src/config/config.json');
 
-const Comment = require('./src/controller');
-
-app.set('views', path.join(__dirname, 'views'));
-app.set('view engine', 'ejs');
-
-app.use(express.json());
-app.use(express.urlencoded({ extended: false }));
-app.use(express.static(path.join(__dirname, 'public')));
+app.get("/", (req, res) => {
+  res.sendFile(path.join(__dirname + '/public/html/index.html'));
+})
 
 app.use('/comments', controllers.comments);
+// app.get('/', home);
 
 // app.get('/', Comment.index);
 // app.get('/db', Comment.db);
@@ -23,4 +19,3 @@ app.use('/comments', controllers.comments);
 
 app.listen(port, console.log(`App listening on port:${port}`));
 
-module.exports = app;
